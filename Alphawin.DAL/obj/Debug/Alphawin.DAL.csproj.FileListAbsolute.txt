@@ -4,3 +4,9 @@ D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha.API\Alphawin.DAL\obj\De
 D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha.API\Alphawin.DAL\obj\Debug\Alphawin.DAL.csproj.CoreCompileInputs.cache
 D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha.API\Alphawin.DAL\obj\Debug\Alphawin.DAL.dll
 D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha.API\Alphawin.DAL\obj\Debug\Alphawin.DAL.pdb
+D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha\Alpha.API\Alphawin.DAL\bin\Debug\Alphawin.DAL.dll
+D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha\Alpha.API\Alphawin.DAL\bin\Debug\Alphawin.DAL.pdb
+D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha\Alpha.API\Alphawin.DAL\obj\Debug\Alphawin.DAL.csproj.AssemblyReference.cache
+D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha\Alpha.API\Alphawin.DAL\obj\Debug\Alphawin.DAL.csproj.CoreCompileInputs.cache
+D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha\Alpha.API\Alphawin.DAL\obj\Debug\Alphawin.DAL.dll
+D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha\Alpha.API\Alphawin.DAL\obj\Debug\Alphawin.DAL.pdb

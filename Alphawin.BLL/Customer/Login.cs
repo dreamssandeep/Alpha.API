@@ -65,17 +65,17 @@ namespace Alphawin.BLL.Customer
             return ur;
         }
 
-        public CustomerProfileUpdateResponse UpdateProfile(string CustomerId, string ProfileImage)
+        public CustomerProfileUpdateResponse UpdateProfile(ProfileUpdateFilter cf)
         {
             CustomerProfileUpdateResponse ur = new CustomerProfileUpdateResponse();
-            if (string.IsNullOrEmpty(CustomerId))
+            if (string.IsNullOrEmpty(cf.CustomerId))
             {
                 ur.status = "Failed";
                 ur.StatusCode = 0;
                 ur.statusText = "Customer required.";
                 return ur;
             } 
-            if (string.IsNullOrEmpty(ProfileImage))
+            if (string.IsNullOrEmpty(cf.ProfileImage))
             {
                 ur.status = "Failed";
                 ur.StatusCode = 0;
@@ -84,17 +84,149 @@ namespace Alphawin.BLL.Customer
             }
 
             CustomerProfileUpdate ud = new CustomerProfileUpdate();
-             else
+            if (new CustomerLoginData().update_Customer_Profile(cf.ProfileImage, cf.CustomerId))
+            {
+                ur.status = "Success";
+                ur.StatusCode = 1;
+                ur.statusText = "Profile Update Successfully";
+                ur.CDS = ud;
+            }
+            else
             {
                 ur.status = "Failed";
                 ur.StatusCode = 0;
-                ur.statusText = "Email not Correct.";
+                ur.statusText = "Some Error Occur.";
                 ur.CDS = ud;
             }
 
             return ur;
         }
 
+        public CustomerMobileUpdateResponse UpdateMobile(MobileUpdateFilter cf)
+        {
+            CustomerMobileUpdateResponse ur = new CustomerMobileUpdateResponse();
+            if (string.IsNullOrEmpty(cf.CustomerId))
+            {
+                ur.status = "Failed";
+                ur.StatusCode = 0;
+                ur.statusText = "CustomerId required.";
+                return ur;
+            }
+            if (string.IsNullOrEmpty(cf.CustomerMobile))
+            {
+                ur.status = "Failed";
+                ur.StatusCode = 0;
+                ur.statusText = "Mobile required.";
+                return ur;
+            }
+
+            CustomerMobileUpdate ud = new CustomerMobileUpdate();
+            if (new CustomerLoginData().update_Customer_Mobile(cf.CustomerMobile, cf.CustomerId))
+            {
+                ur.status = "Success";
+                ur.StatusCode = 1;
+                ur.statusText = "Mobile Update Successfully";
+                ur.CDS = ud;
+            }
+            else
+            {
+                ur.status = "Failed";
+                ur.StatusCode = 0;
+                ur.statusText = "Some Error Occur.";
+                ur.CDS = ud;
+            }
+
+            return ur;
+        }       
+        public CustomerDetailsUpdateResponse UpdateCustomerDetails(CustomerDetailsUpdateFilter cf)
+        {
+            CustomerDetailsUpdateResponse ur = new CustomerDetailsUpdateResponse();
+            if (string.IsNullOrEmpty(cf.CustomerId))
+            {
+                ur.status = "Failed";
+                ur.StatusCode = 0;
+                ur.statusText = "CustomerId required.";
+                return ur;
+            }
+            if (string.IsNullOrEmpty(cf.CustomerMobile))
+            {
+                ur.status = "Failed";
+                ur.StatusCode = 0;
+                ur.statusText = "Mobile required.";
+                return ur;
+            }
+            if (string.IsNullOrEmpty(cf.CustomerEmail))
+            {
+                ur.status = "Failed";
+                ur.StatusCode = 0;
+                ur.statusText = "Email required.";
+                return ur;
+            } if (string.IsNullOrEmpty(cf.ProfileImage))
+            {
+                ur.status = "Failed";
+                ur.StatusCode = 0;
+                ur.statusText = "Profile Image required.";
+                return ur;
+            }
+
+            CustomerDetailsUpdate ud = new CustomerDetailsUpdate();
+            if (new CustomerLoginData().update_Customer_Details(cf.CustomerId,cf.CustomerMobile,cf.ProfileImage,cf.CustomerEmail))
+            {
+                ur.status = "Success";
+                ur.StatusCode = 1;
+                ur.statusText = "Details Update Successfully";
+                ur.CDS = ud;
+            }
+            else
+            {
+                ur.status = "Failed";
+                ur.StatusCode = 0;
+                ur.statusText = "Some Error Occur.";
+                ur.CDS = ud;
+            }
+
+            return ur;
+        }
+
+        public CustomerDetailsViewResponse getCustomerDetails(CustomerFilter cf)
+        {
+            CustomerDetailsViewResponse ur = new CustomerDetailsViewResponse();
+            if (string.IsNullOrEmpty(cf.CustomerId))
+            {
+                ur.status = "Failed";
+                ur.StatusCode = 0;
+                ur.statusText = "CustomerId required.";
+                return ur;
+            }
+
+
+
+            DataTable dtm = new CustomerLoginData().get_Customer(cf.CustomerId,null,null,null,null,null);
+            if (dtm.Rows.Count > 0)
+            {
+                CustomerDetailsView ud = new CustomerDetailsView();
+                ud.CustomerId = dtm.Rows[0]["CustomerId"].ToString();
+                ud.CustomerName = dtm.Rows[0]["CustomerName"].ToString();
+                ud.CustomerEmail = dtm.Rows[0]["CustomerEmail"].ToString();
+                ud.ReferalCode = dtm.Rows[0]["ReferalCode"].ToString();
+                ud.DateOfJoining = dtm.Rows[0]["DateOfJoining"].ToString();
+                ud.ProfileImage = dtm.Rows[0]["ProfileImage"].ToString().Replace("~/", "https://aw.dizitaldreams.in/");
+
+                ur.status = "Success";
+                ur.StatusCode = 1;
+                ur.statusText = "Details Fatch Successfully";
+                ur.CDS = ud;
+            }
+            else
+            {
+                ur.status = "Failed";
+                ur.StatusCode = 0;
+                ur.statusText = "Some Error Occur.";
+               
+            }
+
+            return ur;
+        }
         private bool forwardMailss(string email, string Subject, string sbodyHtml)
         {
            

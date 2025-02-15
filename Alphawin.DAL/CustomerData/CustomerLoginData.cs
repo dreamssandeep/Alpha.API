@@ -66,6 +66,21 @@ namespace Alphawin.DAL.CustomerData
             return SqlDBHelper.ExecuteNonQuery("[dbo].[usp_Customer]", CommandType.StoredProcedure, parameter);
 
         }
+        public bool update_Customer_Details(string CustomerId, string CustomerMobile,string ProfileImage, string CustomerEmail)
+        {
+            SqlParameter[] parameter = new SqlParameter[]
+            {
+            new SqlParameter("@action","update_Customer_Details"),
+            new SqlParameter("@CustomerId",CustomerId),
+            new SqlParameter("@CustomerMobile",CustomerMobile),
+            new SqlParameter("@CustomerEmail",CustomerEmail),
+            new SqlParameter("@ProfileImage",ProfileImage),
+           
+
+            };
+            return SqlDBHelper.ExecuteNonQuery("[dbo].[usp_Customer]", CommandType.StoredProcedure, parameter);
+
+        }
 
         public bool update_Customer_Profile(string ProfileImage, string CustomerId)
         {
@@ -88,13 +103,22 @@ namespace Alphawin.DAL.CustomerData
                 };
             return SqlDBHelper.ExecuteNonQuery("[dbo].[usp_Customer]", CommandType.StoredProcedure, parameter);
         }
-        public bool update_Customer_Mobile(string CustomerName, string CustomerMobile, string CustomerId)
+        public bool update_Customer_Mobile(string CustomerMobile, string CustomerId)
         {
             SqlParameter[] parameter = new SqlParameter[]
                 {
                 new SqlParameter("@action", "update_Customer_Mobile"),
-                new SqlParameter("@CustomerName", CustomerName),
                 new SqlParameter("@CustomerMobile", CustomerMobile),
+                new SqlParameter("@CustomerId", CustomerId)
+                };
+            return SqlDBHelper.ExecuteNonQuery("[dbo].[usp_Customer]", CommandType.StoredProcedure, parameter);
+        } 
+        public bool update_Customer_Name(string CustomerName, string CustomerId)
+        {
+            SqlParameter[] parameter = new SqlParameter[]
+                {
+                new SqlParameter("@action", "update_Customer_Name"),
+                new SqlParameter("@CustomerName", CustomerName),
                 new SqlParameter("@CustomerId", CustomerId)
                 };
             return SqlDBHelper.ExecuteNonQuery("[dbo].[usp_Customer]", CommandType.StoredProcedure, parameter);

@@ -4,3 +4,9 @@ D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha.API\Alphawin.MODAL\obj\
 D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha.API\Alphawin.MODAL\obj\Debug\Alphawin.MODAL.csproj.CoreCompileInputs.cache
 D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha.API\Alphawin.MODAL\obj\Debug\Alphawin.MODAL.dll
 D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha.API\Alphawin.MODAL\obj\Debug\Alphawin.MODAL.pdb
+D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha\Alpha.API\Alphawin.MODAL\bin\Debug\Alphawin.MODAL.dll
+D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha\Alpha.API\Alphawin.MODAL\bin\Debug\Alphawin.MODAL.pdb
+D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha\Alpha.API\Alphawin.MODAL\obj\Debug\Alphawin.MODAL.csproj.AssemblyReference.cache
+D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha\Alpha.API\Alphawin.MODAL\obj\Debug\Alphawin.MODAL.csproj.CoreCompileInputs.cache
+D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha\Alpha.API\Alphawin.MODAL\obj\Debug\Alphawin.MODAL.dll
+D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha\Alpha.API\Alphawin.MODAL\obj\Debug\Alphawin.MODAL.pdb

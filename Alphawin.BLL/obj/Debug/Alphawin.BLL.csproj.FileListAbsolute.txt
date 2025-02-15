@@ -9,3 +9,14 @@ D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha.API\Alphawin.BLL\obj\De
 D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha.API\Alphawin.BLL\obj\Debug\Alphawin.BLL.csproj.CopyComplete
 D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha.API\Alphawin.BLL\obj\Debug\Alphawin.BLL.dll
 D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha.API\Alphawin.BLL\obj\Debug\Alphawin.BLL.pdb
+D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha\Alpha.API\Alphawin.BLL\obj\Debug\Alphawin.BLL.csproj.AssemblyReference.cache
+D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha\Alpha.API\Alphawin.BLL\obj\Debug\Alphawin.BLL.csproj.CoreCompileInputs.cache
+D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha\Alpha.API\Alphawin.BLL\obj\Debug\Alphawin.BLL.dll
+D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha\Alpha.API\Alphawin.BLL\obj\Debug\Alphawin.BLL.pdb
+D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha\Alpha.API\Alphawin.BLL\bin\Debug\Alphawin.BLL.dll
+D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha\Alpha.API\Alphawin.BLL\bin\Debug\Alphawin.BLL.pdb
+D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha\Alpha.API\Alphawin.BLL\bin\Debug\Alphawin.DAL.dll
+D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha\Alpha.API\Alphawin.BLL\bin\Debug\Alphawin.MODAL.dll
+D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha\Alpha.API\Alphawin.BLL\bin\Debug\Alphawin.DAL.pdb
+D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha\Alpha.API\Alphawin.BLL\bin\Debug\Alphawin.MODAL.pdb
+D:\Project Related\ALL PROJECT\API RELATED PROJECT\Alpha\Alpha.API\Alphawin.BLL\obj\Debug\Alphawin.BLL.csproj.CopyComplete

@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="CustomerModal\BankDetails.cs" />
     <Compile Include="CustomerModal\LoginModal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
