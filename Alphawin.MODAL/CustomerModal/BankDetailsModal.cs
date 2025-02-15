@@ -12,6 +12,7 @@ namespace Alphawin.MODAL.CustomerModal
         public string BankName { get; set; }
         public string AccountNo { get; set; }
         public string IFSC { get; set; }
+        public string AccountHolderName { get; set; }
 
         public string ReenterAccount { get; set; }
     }
@@ -24,6 +25,7 @@ namespace Alphawin.MODAL.CustomerModal
         public string IFSC { get; set; }
         public string ReenterAccount { get; set; }
         public string CustomerName { get; set; }
+        public string AccountHolderName { get; set; }
         public string ReferalCode { get; set; }
     }
 
